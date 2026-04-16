@@ -4,7 +4,7 @@
 - Cruz Alexander – [@usuarioGithub](https://github.com/usuarioGithub)
 - Goyochea Kevin – [@usuarioGithub](https://github.com/usuarioGithub)
 - Maidana Agustin Hugo Franco – [@usuarioGithub](https://github.com/usuarioGithub)
-- Medina Brisa Lourdes – [@usuarioGithub](https://github.com/usuarioGithub)
+- Medina Brisa Lourdes – [@xLouux](https://github.com/usuarioGithub)
 - Sivila Emilce Andrea – [@Emilce1996](https://github.com/Emilce1996)
 
 ### Descripción del proyecto
