@@ -23,7 +23,7 @@ El objetivo fue construir un sitio web educativo utilizando **HTML y CSS**, apli
 El contenido se dividió en tres secciones con `<section>` (Objetivos, Recursos y Equipo). Dentro de las secciones, se utilizó la etiqueta `<article>` para agrupar la información, y la etiqueta `<p>` para los párrafos de texto. Para la lista de recursos, se usó una lista desordenada `<ul>` y etiquetas `<li>` para cada ítem. Cada recurso contiene enlaces `<a>` con el atributo `href` para la dirección del archivo y el atributo `target="_blank"`. Por último, en la sección del equipo se empleó un `<table>`, diferenciando encabezados (`<th>`) y datos (`<td>`).
 
 ### Estilos aplicados
-- Se utilizaron las tres formas de CSS:
+Se utilizaron las tres formas de CSS:
   - **Inline CSS**: aplicado en algunos encabezados para demostrar su uso.  
   - **Internal CSS**: pequeños bloques dentro del `<head>` de páginas específicas.  
   - **External CSS**: archivo central `css/styles.css` con la mayor parte de los estilos.  
