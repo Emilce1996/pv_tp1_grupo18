@@ -1,0 +1,118 @@
+/* Variables globales */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #3498db;
+    --color-fondo: #e6f2ff;
+    --color-texto: #2c3e50;
+    --fuente-base: 'Arial', sans-serif;
+}
+
+/* Estructura general con Grid */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-base);
+    color: var(--color-texto);
+    margin: 0;
+}
+
+/* Contenedor superior */
+header {
+    background-color: #0067ac;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título centrado */
+header h1 {
+    text-align: center;
+    color: white;
+    margin: 50px 0 50px 0;
+}
+
+/* Barra de navegación */
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+/* Estilo de los enlaces */
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+header nav a:hover {
+    background-color: #1a6bbc;
+    color: #ecf0f1;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #ecf0f1;
+    border-radius: 8px;
+}
+
+/* Imagen destacada */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Tabla de equipo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eaeaea;
+}
+
+/* Cards (ejemplo para artículos) */
+article {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo-footer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
