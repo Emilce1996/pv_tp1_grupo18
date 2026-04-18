@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-
+    <title>Perfil de Usuario</title>
     <style>
-
-        header{
-            padding: 10px;
-            text-align: center;
+        p {
+            font-size: 16px;
+            color: #2c3e50;
         }
 
-        nav a {
-            color: black; 
-            text-decoration: none;
+        table {
+            border: 1px solid #ccc;
+            width: 100%;
         }
-
-
     </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Perfil de usuario </h1>
+        <h1>Perfil de Usuario</h1>
         <nav>
-            <a href="index.html">INICIO</a>
-            <a href="proyectos.html">PROYECTOS</a>
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="perfil.html">Perfil</a>
         </nav>
-    </header>    
+    </header>
+
+    <main>
+
+        <section id="informacion-personal">
+            <h2>Información Personal</h2>
+            <img src="Recursos/User.jpg" alt="Foto del usuario" width="150">
+            <p><strong>Nombre:</strong> Torrez Belen</p>
+            <p><strong>Rol:</strong> Docente</p>
+        </section>
+    </main>
+
+    <footer>
+        <img src="Recursos/Logo.jpg" alt="Logo del proyecto" class="logo-footer">
+        <p>&copy; 2026 - Plataforma de Gestión Educativa</p>
+    </footer>
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 ## Integrantes del Grupo 18
 - Cruz Alexander – [@usuarioGithub](https://github.com/usuarioGithub)
 - Goyochea Kevin – [@KevinGoyochea]([https://github.com/usuarioGithub](https://github.com/KevinGoyochea))
-- Maidana Agustin Hugo Franco – [@usuarioGithub](https://github.com/TellmeKubson)
+- Maidana Agustin Hugo Franco – [@TellmeKubson](https://github.com/TellmeKubson)
 - Medina Brisa Lourdes – [@xLouux](https://github.com/usuarioGithub)
 - Sivila Emilce Andrea – [@Emilce1996](https://github.com/Emilce1996)
 
