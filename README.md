@@ -1,8 +1,8 @@
 # Trabajo Práctico Nº1 – HTML / CSS / Git / GitHub
 
 ## Integrantes del Grupo 18
-- Cruz Alexander – [@usuarioGithub](https://github.com/usuarioGithub)
-- Goyochea Kevin – [@KevinGoyochea]([https://github.com/usuarioGithub](https://github.com/KevinGoyochea))
+- Cruz Alexander – [@cruzalexander1504](https://github.com/cruzalexander1504-a11y)
+- Goyochea Kevin – [@KevinGoyochea](https://github.com/KevinGoyochea)
 - Maidana Agustin Hugo Franco – [@TellmeKubson](https://github.com/TellmeKubson)
 - Medina Brisa Lourdes – [@xLouux](https://github.com/usuarioGithub)
 - Sivila Emilce Andrea – [@Emilce1996](https://github.com/Emilce1996)
