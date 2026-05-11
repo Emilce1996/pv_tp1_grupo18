@@ -1,74 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Gestión de Proyectos Educativos</title>
+
     <style>
-        p {
-            font-size: 16px;
-            color: #2c3e50;
-        }
+      .header,
+      nav,
+      .footer {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
 
-        table {
-            border: 1px solid #ccc;
-            width: 100%;
-        }
+      section {
+        background-color: var(--violeta-claro);
+        border: 2px solid var(--violeta-medio);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        color: var(--violeta-oscuro);
+        text-align: center;
+      }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
 
-<body>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-    <header>
-        <h1>Bienvenido al Sistema de Organización Académica</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="perfil.html">Perfil</a>
-        </nav>
-    </header>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1
+          class="header-title"
+          style="color: var(--violeta-oscuro); text-align: center"
+        >
+          Bienvenido a Gestión de Proyectos Educativos
+        </h1>
+      </header>
 
-    <main>
+      <nav class="nav-box">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+      </nav>
 
+      <main>
         <section>
-            <h2>Estadisticas</h2>
-
-            <article>
-                <h3>Proyectos Totales</h3>
-                <p>1 proyectos activos en la plataforma</p>
-            </article>
-
-            <article>
-                <h3>Tareas para Hoy</h3>
-                <p>5 tareas pendientes de revision</p>
-            </article>
-
-            <article>
-                <h3>Mensajes Pendientes</h3>
-                <p>3 mensajes sin leer</p>
-            </article>
+          <article>
+            <h3>
+              Bienvenido al portal académico donde podrás encontrar herramientas
+              para organizar tus tareas, visualizar tus avances y colaborar con
+              tu equipo académico.
+            </h3>
+            <h3>
+              Nuestro objetivo es acompañarte para facilitar la planificación y
+              el seguimiento de proyectos educativos, promoviendo la
+              organización, la responsabilidad y el trabajo en equipo.<br />“Aprender
+              a gestionar es aprender a crecer.”
+            </h3>
+            <h3>
+              Guía de la web.<br />
+              Estamos en la sección principal donde presentamos el texto
+              introductorio a la plataforma, una guía de uso de la misma, la
+              sección de estadísticas generales y la sección de novedades de la
+              web. En el menú superior encontrarás acceso a tus proyectos y tu
+              perfil. Explora cada sección para potenciar tu aprendizaje.
+            </h3>
+          </article>
+        </section>
+        <section>
+          <h2>Estadísticas</h2>
+          <article>
+            <h3>Proyectos Totales</h3>
+            <p>1 proyecto activo en la plataforma</p>
+          </article>
+          <article>
+            <h3>Tareas para Hoy</h3>
+            <p>5 tareas pendientes de revisión</p>
+          </article>
+          <article>
+            <h3>Mensajes Pendientes</h3>
+            <p>3 mensajes sin leer</p>
+          </article>
         </section>
 
         <section>
-            <h2>Novedades Recientes</h2>
-            <ul>
-                <li>Medina Brisa Lourdes subio un archivo al proyecto "El Trabajo Social y el Trabajo Infantil en la
-                    Agricultura".</li>
-                <li>Emilce creo el archivo Readme.md en el repositorio.</li>
-                <li>Se creó el proyecto "Trabajo Práctico N° 1 HTML - CSS - Git - GitHub".</li>
-                <li>Alexander edito el archivo README.md del repositorio.</li>
-                <li>Se actualizó el archivo "index.html".</li>
-            </ul>
+          <h2>Novedades Recientes</h2>
+          <ul>
+            <li>Medina Brisa Lourdes subió un archivo...</li>
+            <li>Emilce creó el archivo Readme.md...</li>
+            <li>Se creó el proyecto "Trabajo Práctico N° 1..."</li>
+            <li>Alexander editó el archivo README.md...</li>
+            <li>Se actualizó el archivo "index.html".</li>
+          </ul>
         </section>
+      </main>
 
-    </main>
-
-    <footer>
-        <img src="Recursos/Logo.jpg" alt="Logo del proyecto" class="logo-footer">
-        <p>&copy; 2026 - Plataforma de Gestión Educativa</p>
-    </footer>
-
-</body>
-
+      <footer class="footer">
+        <img src="img/Logo.jpg" alt="Logo del proyecto" class="footer-logo" />
+        <p class="footer-text">
+          &copy; 2026 | Plataforma de Gestión de Proyectos Educativos - Grupo 18
+          | FI UNJu
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

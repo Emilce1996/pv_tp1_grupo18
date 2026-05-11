@@ -1,119 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explorador de Proyectos</title>
+
     <style>
-        p {
-            font-size: 16px;
-            color: #2c3e50;
-        }
+      #filtros {
+        background-color: var(--violeta-claro);
+        border: 2px solid var(--violeta-medio);
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        margin: 1.5rem auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-        table {
-            border: 1px solid #ccc;
-            width: 100%;
-        }
+      #filtros h2 {
+        color: var(--violeta-oscuro);
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      #filtros form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      #filtros label {
+        font-weight: bold;
+        color: var(--violeta-oscuro);
+        margin-bottom: 5px;
+      }
+
+      #filtros select {
+        padding: 8px;
+        border: 1px solid var(--violeta-medio);
+        border-radius: 6px;
+        background-color: #fff;
+        transition:
+          border-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      #filtros select:focus {
+        border-color: var(--violeta-oscuro);
+        box-shadow: 0 0 5px rgba(74, 35, 90, 0.5);
+        outline: none;
+      }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-    <header>
-        <h1>Explorador de Proyectos</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="perfil.html">Perfil</a>
-        </nav>
-    </header>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1
+          class="header-title"
+          style="color: var(--violeta-oscuro); text-align: center"
+        >
+          Explorador de Proyectos
+        </h1>
+      </header>
 
-    <main>
+      <nav class="nav-box">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+      </nav>
+
+      <main>
         <aside id="filtros">
-            <h2>Filtrar proyectos</h2>
-            <form>
-                <div class="filtro">
-                    <label for="categoria">Categoría:</label>
-                    <select id="categoria" name="categoria">
-                        <option value="todas">Todas</option>
-                        <option value="matematica">Matemática</option>
-                        <option value="ciencias">Ciencias</option>
-                        <option value="lengua">Lengua</option>
-                    </select>
-                </div>
+          <h2>Filtrar proyectos</h2>
+          <form>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+              <option value="todas">Todas</option>
+              <option value="matematica">Matemática</option>
+              <option value="ciencias">Ciencias</option>
+              <option value="lengua">Lengua</option>
+            </select>
 
-                <div class="filtro">
-                    <label for="anio">Año:</label>
-                    <select id="anio" name="anio">
-                        <option value="2026">2026</option>
-                        <option value="2025">2025</option>
-                        <option value="2024">2024</option>
-                    </select>
-                </div>
+            <label for="anio">Año:</label>
+            <select id="anio" name="anio">
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select>
 
-                <div class="filtro">
-                    <label for="estado">Estado:</label>
-                    <select id="estado" name="estado">
-                        <option value="todos">Todos</option>
-                        <option value="en-curso">En curso</option>
-                        <option value="finalizado">Finalizado</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn-filtrar">Aplicar filtros</button>
-            </form>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+              <option value="todos">Todos</option>
+              <option value="en-curso">En progreso</option>
+              <option value="finalizado">Finalizado</option>
+            </select>
+          </form>
         </aside>
 
         <section id="listado-proyectos">
-            <h2 class="titulo-proyectos">Proyectos disponibles</h2>
+          <h2 style="text-align: center">Proyectos disponibles</h2>
 
+          <div class="cards">
             <div class="card">
-                <img src="Recursos/Matematica1.jpeg" alt="Imagen Proyecto 1">
+              <div class="card-header">
                 <h3>Proyecto Matemática Básica</h3>
-                <p>Materiales interactivos para reforzar conceptos fundamentales de matemáticas.</p>
-                <p>Categoría: Matemática</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/Matematica1.jpeg"
+                  alt="Imagen Proyecto 1"
+                  width="100%"
+                />
+                <p>
+                  Materiales interactivos para reforzar conceptos fundamentales
+                  de matemáticas.
+                </p>
+                <p><strong>Categoría:</strong> Matemática</p>
                 <a href="detalle.html" class="btn">Ver detalle</a>
+              </div>
             </div>
 
             <div class="card">
-                <img src="Recursos/Ciencias1.jpg" alt="Imagen Proyecto 2">
+              <div class="card-header">
                 <h3>Proyecto Ciencias Naturales</h3>
-                <p>Recursos digitales para explorar fenómenos naturales y experimentos.</p>
-                <p>Categoría: Ciencias</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/Ciencias1.jpg"
+                  alt="Imagen Proyecto 2"
+                  width="100%"
+                />
+                <p>
+                  Recursos digitales para explorar fenómenos naturales y
+                  experimentos.
+                </p>
+                <p><strong>Categoría:</strong> Ciencias</p>
                 <a href="detalle.html" class="btn">Ver detalle</a>
+              </div>
             </div>
 
             <div class="card">
-                <img src="Recursos/Lengua1.jpeg" alt="Imagen Proyecto 3">
+              <div class="card-header">
                 <h3>Proyecto Lengua y Literatura</h3>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/Lengua1.jpeg"
+                  alt="Imagen Proyecto 3"
+                  width="100%"
+                />
                 <p>Actividades para fomentar la lectura y escritura.</p>
-                <p>Categoría: Lengua</p>
+                <p><strong>Categoría:</strong> Lengua</p>
                 <a href="detalle.html" class="btn">Ver detalle</a>
+              </div>
             </div>
 
             <div class="card">
-                <img src="Recursos/Matematica2.jpeg" alt="Imagen Proyecto 4">
+              <div class="card-header">
                 <h3>Proyecto Historia Argentina</h3>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/Matematica2.jpeg"
+                  alt="Imagen Proyecto 4"
+                  width="100%"
+                />
                 <p>Investigación sobre procesos históricos relevantes.</p>
-                <p>Categoría: Matemática</p>
+                <p><strong>Categoría:</strong> Matemática</p>
                 <a href="detalle.html" class="btn">Ver detalle</a>
+              </div>
             </div>
 
+            <!-- Card 5 -->
             <div class="card">
-                <img src="Recursos/Ciencias2.jpg" alt="Imagen Proyecto 5">
+              <div class="card-header">
                 <h3>Proyecto Física Experimental</h3>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/Ciencias2.jpg"
+                  alt="Imagen Proyecto 5"
+                  width="100%"
+                />
                 <p>Experimentos prácticos para comprender fenómenos físicos.</p>
-                <p>Categoría: Ciencias</p>
+                <p><strong>Categoría:</strong> Ciencias</p>
                 <a href="detalle.html" class="btn">Ver detalle</a>
+              </div>
             </div>
+          </div>
         </section>
-    </main>
+      </main>
 
-    <footer>
-        <img src="Recursos/Logo.jpg" alt="Logo del proyecto" class="logo-footer">
-        <p>&copy; 2026 - Plataforma de Gestión Educativa</p>
-    </footer>
-</body>
-
+      <footer class="footer">
+        <img src="img/Logo.jpg" alt="Logo del proyecto" class="footer-logo" />
+        <p class="footer-text">
+          &copy; 2026 | Plataforma de Gestión de Proyectos Educativos - Grupo 18
+          | FI UNJu
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
