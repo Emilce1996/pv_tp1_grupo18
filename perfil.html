@@ -1,48 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil de Usuario</title>
+
     <style>
-        p {
-            font-size: 16px;
-            color: #2c3e50;
-        }
+      #informacion-personal {
+        background-color: var(--violeta-claro);
+        border: 2px solid var(--violeta-medio);
+        border-radius: 8px;
+        padding: 2rem;
+        width: 20%;
+        margin: 2rem auto;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-        table {
-            border: 1px solid #ccc;
-            width: 100%;
-        }
+      #informacion-personal img {
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: 3px solid var(--violeta-medio);
+      }
+
+      #informacion-personal h2 {
+        color: var(--violeta-oscuro);
+        margin-bottom: 1rem;
+      }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
 
-<body>
-    <header>
-        <h1>Perfil de Usuario</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="perfil.html">Perfil</a>
-        </nav>
-    </header>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-    <main>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1
+          class="header-title"
+          style="color: var(--violeta-oscuro); text-align: center"
+        >
+          Perfil de Usuario
+        </h1>
+      </header>
 
+      <nav class="nav-box">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+      </nav>
+
+      <main>
         <section id="informacion-personal">
-            <h2>Información Personal</h2>
-            <img src="Recursos/User.jpg" alt="Foto del usuario" width="150">
-            <p><strong>Nombre:</strong> Torrez Belen</p>
-            <p><strong>Rol:</strong> Docente</p>
+          <h2>Información Personal</h2>
+          <img src="img/User.jpg" alt="Foto del usuario" width="150" />
+          <p><strong>Nombre:</strong> Torrez Belen</p>
+          <p><strong>Rol:</strong> Docente</p>
         </section>
-    </main>
+      </main>
 
-    <footer>
-        <img src="Recursos/Logo.jpg" alt="Logo del proyecto" class="logo-footer">
-        <p>&copy; 2026 - Plataforma de Gestión Educativa</p>
-    </footer>
-</body>
-
+      <footer class="footer">
+        <img src="img/Logo.jpg" alt="Logo del proyecto" class="footer-logo" />
+        <p class="footer-text">
+          &copy; 2026 | Plataforma de Gestión de Proyectos Educativos - Grupo 18
+          | FI UNJu
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
